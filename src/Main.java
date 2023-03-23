@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList <Book>books = new ArrayList<>();
+        ArrayList<Book> books = new ArrayList<>();
 
 
-        Book book  = new Book();
+        Book book = new Book();
         book.setTitle("Grazus gyvenimas");
         book.setPages(105);
         book.setReleaseYear(2000);
@@ -28,7 +28,6 @@ public class Main {
         Book book3 = new Book("Ragana", 276, 2023);
 
 
-
         books.add(book);
         books.add(b1);
         books.add(b2);
@@ -37,24 +36,22 @@ public class Main {
         books.add(book3);
 
 
-
-
-        for (int i = 0; i <books.size() ; i++) {
+        for (int i = 0; i < books.size(); i++) {
             Book bookI = books.get(i);
-           // System.out.println(bookI);
+            // System.out.println(bookI);
             System.out.println(books.get(i));
         }
-        ("-------------------")
+        System.out.println("-------------------");
 
 
-        ArrayList <Plant>plant = new ArrayList<>();
+        ArrayList<Plant> plant = new ArrayList<>();
 
         Plant a = new Plant();
         a.setTitle("Rope");
         a.setLatinTitle("Brassica rapa");
         a.setAnnual(true);
         a.setContinent("Europa, Azija");
-        a.setheight(25 - 55);
+        a.setHeight(55);
         a.setEdible(true);
 
         Plant b = new Plant();
@@ -62,7 +59,7 @@ public class Main {
         b.setLatinTitle("Eruca sativa");
         b.setAnnual(false);
         b.setContinent("Azija, Centrine Europa");
-        b.setheight(30-60);
+        b.setHeight(50);
         b.setEdible(true);
 
         Plant c = new Plant();
@@ -70,7 +67,7 @@ public class Main {
         c.setLatinTitle("Helianthus");
         c.setAnnual(false);
         c.setContinent("Siaures Amerika");
-        c.setheight(100-250);
+        c.setHeight(200);
         c.setEdible(true);
 
         Plant d = new Plant();
@@ -78,23 +75,33 @@ public class Main {
         d.setLatinTitle("Sanguisorba");
         d.setAnnual(true);
         d.setContinent("Europa");
-        d.setheight(120-90);
+        d.setHeight(90);
         d.setEdible(false);
 
+        Plant plant9 = new Plant("Rope","Brassica rapa", true, "Europa, Azija", 55, true);
+        Plant plant8 = new Plant("Rukola", "Eruca sativa", false,"Azija, Centrine Europa", 50, true);
 
 
+        plant.add(c);
+        plant.add(d);
+        plant.add(plant9);
+        plant.add(plant8);
 
 
-
-
-
-
-
-
+        for (int i = 0; i < plant.size(); i++) {
+//            Plant plant1 = plant.get(i);
+            System.out.println(plant.get(i));
+        }
 
 
 
 
     }
+
 }
+
+
+
+
+
 

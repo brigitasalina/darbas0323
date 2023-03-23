@@ -55,11 +55,11 @@ public class Plant {
 
     }
 
-    public void setheight(int height) {
+    public void setHeight(int height) {
         this.height= height;
     }
 
-    public int getheight() {
+    public int getHeight() {
         return this.height;
 
     }
@@ -67,15 +67,15 @@ public class Plant {
         this.title = title;
     }
 
-    public boolean getedible() {
+    public boolean getEdible() {
         return this.edible;
 
     }
 
     @Override
     public String toString() {
-        return ("Augalo pavadinimas " + title + " lotyniskas pavadinimas " + latinTitle + " vienmetis " + (this.annual ? "true" : "false") +
-                " kokiam zemyne auga " + continent + "suaugusio augalo aukstis " + height + " valgomas" + edible);
+        return ("Pavadinimas " + title +", lotyniskas pavadinimas " + latinTitle + ", augalas yra " + (this.annual ? "vienmetis" : "daugiametis") +
+                ", auga " + continent + ", suaugusio augalo aukstis " + height + "cm" + ", augalas yra" + (this.edible ? "nevalgomas" : " valgomas"));
 
     }
 

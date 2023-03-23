@@ -37,7 +37,7 @@ public class Book {
         this.releaseYear = releaseYear;
     }
 
-    public int getreleaseYear() {
+    public int getReleaseYear() {
        return this.releaseYear;
 
     }
